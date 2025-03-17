@@ -1,0 +1,178 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff66b2;
+    font-size: 2.5rem;
+}
+
+button {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ff3385;
+}
+
+#heart {
+    font-size: 3rem;
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#poem {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+#explosion {
+    font-size: 2rem;
+    color: red;
+    display: none;
+}
+
+#finalMessage {
+    font-size: 2rem;
+    color: #ff66b2;
+}
+
+@keyframes heartAnimation {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(2);
+    }
+}
+
+@keyframes explodeAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(2);
+    }
+}
+#bigHeart {
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s;
+}
+
+.hidden {
+    display: none;
+}
+/* Анхны товчийн хэв маяг */
+button {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ff3385;
+}
+
+/* Сонголтуудын хэв маяг */
+#newOption {
+    display: none;
+}
+
+#outdoorOption, #indoorOption {
+    background-color: #66b3ff;
+    color: white;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#outdoorOption:hover, #indoorOption:hover {
+    background-color: #3399ff;
+}
+
+/* Дөрвөлжин загвар */
+button.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+/* Анхны товчийн хэв маяг */
+button {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ff3385;
+}
+
+/* Сонголтуудын хэв маяг */
+#newOption {
+    display: none;
+}
+
+#outdoorOption, #indoorOption {
+    background-color: #66b3ff;
+    color: white;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#outdoorOption:hover, #indoorOption:hover {
+    background-color: #3399ff;
+}
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уучлаарай, хайртай шүү 💖</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>I'm sorry(ごめんね、愛してるよ) ❤️💖</h1>
+        <p id="message">Би чамд хайртай гэдгээ хэлж байна!</p>
+        
+        <button id="acceptBtn" onclick="displayMessage('accept')">Уучлах</button>
+        <button id="declineBtn" onclick="displayMessage('decline')">Уучлахгүй</button>
+
+
+        <div id="heart"></div>
+        <div id="poem" class="hidden"></div>
+        <div id="explosion" class="hidden">
+            <p>💥 БОМБ ДЭЛБЭРЛЭЭ! 💥</p>
+            <p id="finalMessage">Энэ их хайраа хаана нуух вэ?</p>
+        </div>
+        <div id="newOption" class="hidden">
+            <button id="outdoorOption" onclick="displayOption('outdoor')">Гадуур болзох</button>
+            <button id="indoorOption" onclick="displayOption('indoor')">Гэртэй болзох</button>
+        </div>
+    </div>
+    <div id="bigHeart" class="hidden">❤️</div>
+    <script src="script.js"></script>
+</body>
+</html>
